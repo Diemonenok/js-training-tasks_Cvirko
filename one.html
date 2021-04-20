@@ -1,0 +1,16 @@
+<Html>
+    <script>
+        let Numbers=[2,3,5,7,11,13,17,19];
+       
+
+        let NewNumbers=Numbers.reduce(function(accumulator,currentValue,index,array)
+        {
+            array[index] =accumulator+currentValue;
+            if (index==array.length-1)
+            {return array;}
+            return accumulator+currentValue;
+
+        } ,0);
+        for(let i=0; i<NewNumbers.length;i++){console.log(NewNumbers[i]);};
+    </script>
+</Html>
